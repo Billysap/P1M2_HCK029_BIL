@@ -72,14 +72,18 @@ Python 3.10+
 - pickle – Model serialization
 
 3. Web App / Dashboard: streamlit – For deploying the model and building an interactive UI
+![Dashboard Screenshot](images/app.png)
+![Dashboard Screenshot](images/eda.png)
+![Dashboard Screenshot](images/prediction.png)
 
 4. Others:
 - Jupyter Notebook – Model development and experimentation
 - Git & GitHub – Version control and project sharing
 
-
 ## Reference
-Dashboard:
+Dashboard: 
+Dashboard (Streamlit)
+https://ccdefaultpred.streamlit.app/
 
 Resource:
 - https://thedocs.worldbank.org/en/doc/935891585869698451-0130022020/original/CREDITSCORINGAPPROACHESGUIDELINESFINALWEB.pdf

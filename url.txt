@@ -1,0 +1,7 @@
+# Phase 1 Milestone 2
+Name    : Billy Saputra
+Batch   : HCK-029
+
+The dataset used in this project comes from Kaggle:
+- https://www.kaggle.com/datasets/mishra5001/credit-card
+

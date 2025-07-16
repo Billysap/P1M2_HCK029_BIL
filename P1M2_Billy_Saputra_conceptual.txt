@@ -1,0 +1,50 @@
+# Phase 1 Milestone 2
+Name    : Billy Saputra
+Batch   : HCK-029
+
+Conceptual Problems
+
+1. Explain the background behind Bagging and how Bagging works!
+
+Bagging, short for Bootstrap Aggregating, was developed to reduce variance and improve the stability of machine learning 
+algorithms, especially decision trees that are prone to overfitting. Bagging works by creating multiple subsets of the training 
+data using bootstrapping (random sampling with replacement). Then, it trains a separate model on each subset and combines their 
+outputs, typically using majority voting (for classification) or averaging (for regression).
+
+In this project, we used Random Forest, which is an ensemble method based on Bagging. It builds multiple decision trees on 
+bootstrapped data and randomly selects features at each split, improving generalization and reducing overfitting.
+
+
+2. Explain how Random Forest differs from the Boosting algorithm you selected!
+
+Random Forest and Boosting are both ensemble methods, but they differ in how the models are built and combined:
+
+a. Random Forest (Bagging-based):
+    - Builds multiple decision trees in parallel.
+    - Each tree is trained independently on a different bootstrap sample.
+    - Combines predictions by voting (classification) or averaging (regression).
+    - Reduces variance.
+
+b. Boosting (e.g., XGBoost):
+    - Builds trees sequentially, where each new tree focuses on correcting the errors of the previous ones.
+    - Weights are adjusted for misclassified instances.
+    - Combines models by weighting their outputs.
+    - Reduces both bias and variance.
+
+In this project, we evaluated both Random Forest and XGBoost. Although XGBoost provided strong performance, 
+we ultimately selected KNN based on its balance of speed and interpretability during hyperparameter tuning and cross-validation.
+
+3. Explain what Cross Validation means!
+
+Cross Validation is a technique used to evaluate the performance and generalizability of a model by dividing the dataset 
+into multiple folds (typically 3, 5, or 10). The model is trained on a subset of the data and validated on the remaining part, 
+rotating through all folds. The final performance is averaged across all folds to get a reliable estimate.
+
+In this project, we used 3-Fold Cross Validation to evaluate each model (KNN, SVM, Decision Tree, etc.) on multiple metrics 
+such as F1-Score, ROC AUC, and Recall. This ensured our model didn't just perform well on a single split but was consistently 
+effective across different data segments.
+
+
+
+
+
